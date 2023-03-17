@@ -29,6 +29,7 @@ def gernerate_answer(result_dict):
     else:
         answer.append("N")
     return answer
+
 def solution(survey, choices):
     type = {"R", "T", "C", "F", "J", "M", "A", "N"}
     result_dict = {x: 0 for x in type}
@@ -43,4 +44,5 @@ def solution(survey, choices):
     return answer
 s = ["AN", "CF", "MJ", "RT", "NA"]
 c = [5, 3, 2, 7, 5]
+print(s[1][1])
 print(solution(s,c))
